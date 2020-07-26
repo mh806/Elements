@@ -13,12 +13,15 @@ public class OOP {
 
     public static void main(String[] args) {
         User user = new User(); //constructor -> local variable
-        user.firstname = "William";
+        user.setFirstname("William");
         user.lastname = "Huang";
         //arguments -> times
         user.output(3);
         String message = user.returnValue();
         System.out.println(message);
+        System.out.println(user.getFullname());
+        System.out.println(user.getFirstname());
+        //66
     }
     //class
 

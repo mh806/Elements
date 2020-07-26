@@ -1,6 +1,6 @@
 public class User {
     //fields
-    public String firstname;
+    private String firstname;
     public String lastname;
 
     public void output(int times){
@@ -10,6 +10,21 @@ public class User {
     }
 
     public String returnValue(){
-        return "Hi my name is"+firstname+"."+lastname.toUpperCase();
+        return "Hi my name is "+firstname+"."+lastname.toUpperCase();
+    }
+
+    //encapsulation
+    //getter
+    public String getFirstname(){
+        return firstname.toUpperCase();
+    }
+
+    //setter
+    public void setFirstname(String fn){
+        firstname = fn.strip();
+    }
+
+    public String getFullname(){
+        return getFirstname()+" "+lastname;
     }
 }
