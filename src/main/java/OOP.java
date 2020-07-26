@@ -15,8 +15,12 @@ public class OOP {
         User user = new User(); //constructor -> local variable
         user.firstname = "William";
         user.lastname = "Huang";
-
-        user.output();
+        //arguments -> times
+        user.output(3);
+        String message = user.returnValue();
+        System.out.println(message);
     }
     //class
+
+
 }
