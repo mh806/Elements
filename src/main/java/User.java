@@ -24,6 +24,10 @@ public class User {
         firstname = fn.strip();
     }
 
+    public void setLastname(String ln){
+        lastname = ln.strip();
+    }
+
     public String getFullname(){
         return getFirstname()+" "+lastname;
     }

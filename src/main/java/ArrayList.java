@@ -59,5 +59,19 @@ public class ArrayList {
             }
             System.out.println();
         }
+
+        User me = new User();
+        me.setFirstname("William");
+        me.setLastname("HUANG");
+
+        User you = new User();
+        you.setFirstname("Hello");
+        you.setLastname("World");
+
+        List<User> users = new ArrayList<User>();
+        users.add(you);
+        users.add(me);
+        System.out.println(users.get(1).getFullname());
+
     }
 }

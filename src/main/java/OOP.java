@@ -1,3 +1,5 @@
+import java.util.List;
+
 public class OOP {
     //why OOP -> type exact what happened
 
@@ -21,7 +23,6 @@ public class OOP {
         System.out.println(message);
         System.out.println(user.getFullname());
         System.out.println(user.getFirstname());
-        //66
     }
     //class
 
