@@ -1,6 +1,4 @@
-import java.util.Arrays;
-import java.util.LinkedList;
-import java.util.List;
+import java.util.*;
 
 public class ArrayList {
     public static void main(String[] args) {
@@ -68,10 +66,33 @@ public class ArrayList {
         you.setFirstname("Hello");
         you.setLastname("World");
 
-        List<User> users = new ArrayList<User>();
-        users.add(you);
-        users.add(me);
-        System.out.println(users.get(1).getFullname());
+        List<User>names = new java.util.ArrayList<User>();
+        names.add(me);
+        names.add(you);
+        System.out.println(names.get(1));
 
+        String[] firstName = {"A","B","C","D"};
+        String[] lastName = {"g","h","i","j"};
+
+        for(int i=0;i<firstName.length;i++){
+
+            User him = new User();
+            him.setFirstname(firstName[i]);
+            him.setLastname(lastName[i]);
+            names.add(him);
+        }
+
+        for (User x:names) {
+            System.out.println(x.getFullname());
+        }
+
+        ArrayList name = new ArrayList();
+        name.printUser(me);
+
+
+    }
+
+    public void printUser(User user){
+        System.out.println(user.getFullname());
     }
 }

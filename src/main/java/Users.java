@@ -9,4 +9,9 @@ public class Users {
     public String getFullName(){
         return firstName+" "+lastName;
     }
+
+    //static method
+    public static void getUser(User user){
+        System.out.println(user.getFullname());
+    }
 }
