@@ -64,6 +64,16 @@ public class User {
     public static int searchList(List<User>users, User u){
         return searchList(users, u.getFullname());
     }
+
+
+    public void changeCrap(int x){
+        x++;
+    }
+
+    public static void changeSth(User x){
+        x.setFirstname("Changed");
+    }
+
     //override -> derived class: different methods
 
     @Override
@@ -74,5 +84,15 @@ public class User {
                 '}';
     }
 
-    //79
+    public static User findUser(List<User> users, User u){
+        for (User user: users){
+            if (user.equals(u)){
+                return user;
+            }
+        }
+        return u;
+    }
+
+
+
 }

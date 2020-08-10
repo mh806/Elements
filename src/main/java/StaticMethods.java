@@ -37,6 +37,22 @@ public class StaticMethods {
         System.out.println(u);
 
         System.out.println(User.searchList(users, u));
+
+        User search = new User();
+        search.setLastname("Not");
+        search.setFirstname("Nosss");
+
+        User found = User.findUser(users,search);
+        found.setFirstname("Zoey");
+        System.out.println(found);
+
+        found.changeSth(search);
+        System.out.println(search);
+
+        Student s = new Student();
+        s.major = "William Designed";
+        System.out.println(s.major);
+        //83
     }
 
 
