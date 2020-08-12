@@ -52,7 +52,28 @@ public class StaticMethods {
         Student s = new Student();
         s.major = "William Designed";
         System.out.println(s.major);
-        //83
+
+        //virtual -> derived class
+        //private static method cannot use virtual -> exception -> most time default virtual implicitly
+        //Override code examples
+
+        Student sss = new Student();
+        sss.major=" William Huang";
+        sss.dog = "sss";
+        sss.cat = "william";
+        sss.sayHello();
+
+        Teacher mmm = new Teacher();
+        mmm.cat = "Teach";
+        mmm.dog = "Er";
+
+        List<Animals> animals = new ArrayList<>();
+        animals.add(sss);
+        animals.add(mmm);
+
+        for (Animals animal:animals){
+            animal.sayHello();
+        }
     }
 
 
