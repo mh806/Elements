@@ -74,6 +74,18 @@ public class StaticMethods {
         for (Animals animal:animals){
             animal.sayHello();
         }
+
+        Student z = new Student("mark","hallo");
+        System.out.println(z.cat);
+
+        Student l = new Student();
+        l.gotyou();
+
+        Student p = new Student();
+
+        List<Talk> thingsTalk = new ArrayList<>();
+        thingsTalk.add(s);
+        //90
     }
 
 
