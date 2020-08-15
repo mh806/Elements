@@ -21,4 +21,6 @@ public class Student extends Animals implements Talk{
         super.gotyou();
     }
 
+
+
 }

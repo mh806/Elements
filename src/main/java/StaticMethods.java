@@ -85,7 +85,8 @@ public class StaticMethods {
 
         List<Talk> thingsTalk = new ArrayList<>();
         thingsTalk.add(s);
-        //90
+
+
     }
 
 

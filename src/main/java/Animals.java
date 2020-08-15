@@ -29,5 +29,6 @@ public abstract class Animals implements Talk{ //prevent instaniate it -> cannot
 
     //class -> extends -> class -> implements (interface)
 
-
+    //final -> the last use, dont want any override -> prevent any extentions
+    public final void LearnFinal(){}
 }
